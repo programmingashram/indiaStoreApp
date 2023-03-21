@@ -1,0 +1,279 @@
+<!-- <div class="sys-container-lg">
+    
+  <div class="sys-row mb-5" *ngIf="product">
+    <h2>Product Details</h2>
+      <div class="col-md-6">
+          <div class="product-image">
+            <img src="{{ product.productImage }}" alt="" class="img-rwd sys-radius-sm sys-elavation-v3">
+          </div>
+      </div>
+      <div class="col-md-6">
+  
+          <div class="product_details">
+            <h2>{{product.fullName}}</h2>
+          
+            <hr>
+            <p class="mt-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ducimus delectus sapiente a dolore adipisci amet dolorem sit dignissimos veritatis iusto magni illo, repudiandae nihil maiores dolorum harum quisquam ipsum. 
+            </p>
+            <div class="add sys-grid align-i-baseline justify-c-between mt-4">
+              <h3 class="text-dark">Rs. {{product.price}}</h3>
+              <button class="sys-btn-accent" role="button" (click)="addToCart(product)">Buy Now</button>
+            </div>
+            <hr>
+            <div class="add sys-grid align-i-baseline justify-c-between mt-4 p-2">
+                <div class="text-olive">
+                  <h3>Free Delevery</h3>
+                </div>
+                <div class="text-accent">
+                  <h3>
+                    Fast Service
+                  </h3>
+                </div>
+                <div class="text-alert">
+                  <h4>
+                    Best quality product
+                  </h4>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="sys-row" *ngIf="productsBakery">
+    <h2>{{productsBakery.fullName}}</h2>
+    <h2>Product Details</h2>
+    <div class="col-md-6">
+        <div class="product-image">
+          <img src="{{ productsBakery.productImage }}" alt="" class="img-rwd sys-radius-sm sys-elavation-v3">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="product_details">
+          <h2>{{productsBakery.fullName}}</h2>
+        
+          <hr>
+
+          <p class="mt-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ducimus delectus sapiente a dolore adipisci amet dolorem sit dignissimos veritatis iusto magni illo, repudiandae nihil maiores dolorum harum quisquam ipsum. 
+          </p>
+          <div class="add sys-grid align-i-baseline justify-c-between mt-4">
+            <h3 class="text-dark">Rs. {{productsBakery.price}}</h3>
+            <button class="sys-btn-accent" role="button" (click)="addToCart(productsBakery)">Buy Now</button>
+          </div>
+          <hr>
+          <div class="add sys-grid align-i-baseline justify-c-between mt-4 p-2">
+              <div class="text-olive">
+                <h3>Free Delevery</h3>
+              </div>
+              <div class="text-accent">
+                <h3>
+                  Fast Service
+                </h3>
+              </div>
+              <div class="text-alert">
+                <h4>
+                  Best quality product
+                </h4>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+</div> -->
+
+<section *ngIf="product">
+  <div class="sys-container">
+      <div class="sys-grid align-i-center">
+          <div class="col-md-6">
+              <div class="checkout-img">
+                  <img src="{{ product.productImage }}" alt="" class="img-rwd">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="product-deatils">
+                  <h3>{{product.fullName}}</h3>
+                  <div>
+                      <h2 class="text-accent-90 mb-2">${{product.price}}</h2>
+                      <p>
+                          Lollipop cake chocolate chocolate cake dessert jujubes. Shortbread sugar plum dessert powder cookie sweet brownie. Cake cookie apple pie dessert sugar plum muffin cheesecake.
+                      </p>
+                  </div>
+                 <div class="sys-grid align-i-center justify-c-between mt-3">
+                      <div class="drop w-100">
+                          <label for="">Quntity</label>
+                          <select name="" id="" class="p-2 w-25">
+                              <option value="">1Kg</option>
+                              <option value="">1Kg</option>
+                              <option value="">1Kg</option>
+                              <option value="">1Kg</option>
+                          </select>
+                      </div>
+                      <div class="add">
+                          <button class="sys-btn-dark uppercase" type="button" (click)="addToCart(product)">Add to cart</button>
+                      </div>
+                 </div>
+                 <div class="details mt-3">
+                      <h3 class="mb-2 text-secondary">
+                          <i class="fa fa-info-circle"></i>  Store Information
+                      </h3>
+                      <p>
+                          Lollipop cake chocolate chocolate cake dessert jujubes. Shortbread sugar plum dessert powder cookie sweet brownie.
+                      </p>
+                 </div>
+                 <div class="details">
+                  <h3 class="mb-2">
+                     <i class="fa fa-info-circle"></i> Product Information
+                  </h3>
+                  <table class="w-100 text-left bg">
+                      <tbody>
+                          <tr>
+                              <th>
+                                  Specialty
+                              </th>
+                              <td>
+                                  Vegetarian
+                              </td>
+                          </tr>
+                          <tr>
+                              <th>
+                                  Brand
+                              </th>
+                              <td>
+                                  Lavian Exotique
+                              </td>
+                          </tr> 
+                          <tr>
+                              <th>
+                                  Price
+                              </th>
+                              <td>
+                                  $49.50
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section *ngIf="productsBakery">
+  <div class="sys-container">
+      <div class="sys-grid align-i-center">
+          <div class="col-md-6">
+              <div class="checkout-img">
+                  <img src="{{productsBakery.productImage}}" alt="" class="img-rwd">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="product-deatils">
+                  <h3>{{productsBakery.fullName}}</h3>
+                  <div>
+                      <h2 class="text-accent-90 mb-2">${{productsBakery.price}}</h2>
+                      <p>
+                          Lollipop cake chocolate chocolate cake dessert jujubes. Shortbread sugar plum dessert powder cookie sweet brownie. Cake cookie apple pie dessert sugar plum muffin cheesecake.
+                      </p>
+                  </div>
+                 <div class="sys-grid align-i-center justify-c-between mt-3">
+                      <div class="drop w-100">
+                          <label for="">Quntity</label>
+                          <select name="" id="" class="p-2 w-25">
+                              <option value="">1Kg</option>
+                              <option value="">1Kg</option>
+                              <option value="">1Kg</option>
+                              <option value="">1Kg</option>
+                          </select>
+                      </div>
+                      <div class="add">
+                          <button class="sys-btn-dark uppercase" type="button" (click)="addToCart(productsBakery)">Add to cart</button>
+                      </div>
+                 </div>
+                 <div class="details mt-3">
+                      <h3 class="mb-2 text-secondary">
+                          <i class="fa fa-info-circle"></i>  Store Information
+                      </h3>
+                      <p>
+                          Lollipop cake chocolate chocolate cake dessert jujubes. Shortbread sugar plum dessert powder cookie sweet brownie.
+                      </p>
+                 </div>
+                 <div class="details">
+                  <h3 class="mb-2">
+                     <i class="fa fa-info-circle"></i> Product Information
+                  </h3>
+                  <table class="w-100 text-left bg">
+                      <tbody>
+                          <tr>
+                              <th>
+                                  Specialty
+                              </th>
+                              <td>
+                                  Vegetarian
+                              </td>
+                          </tr>
+                          <tr>
+                              <th>
+                                  Brand
+                              </th>
+                              <td>
+                                  Lavian Exotique
+                              </td>
+                          </tr> 
+                          <tr>
+                              <th>
+                                  Price
+                              </th>
+                              <td>
+                                  $49.50
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="p-3 sys-elevation-v2">
+  <div class="p-3">
+      <div class="sys-grid justify-c-between align-i-center">
+          <div class="card-1">
+             <div class="sys-grid align-i-center gap-sm">
+                  <img src="https://themes.pixelstrap.com/fastkart/assets/svg/product.svg" alt="">
+                  <p> 
+                      Every Fresh Products
+                  </p>
+             </div>
+          </div>
+          <div class="card-1">
+              <div class="sys-grid align-i-center gap-sm">
+                  <img src="https://themes.pixelstrap.com/fastkart/assets/svg/delivery.svg" alt="">
+                  <p> Free Delivery For Order Over $50
+                 </p>
+              </div>
+          </div>
+          <div class="card-1">
+             <div class="sys-grid align-i-center gap-sm">
+              <img src="https://themes.pixelstrap.com/fastkart/assets/svg/discount.svg" alt="">
+              <p> Daily Mega Discounts</p>
+             </div>
+          </div>
+          <div class="card-1">
+             <div class="sys-grid align-i-center gap-sm">
+              <img src="https://themes.pixelstrap.com/fastkart/assets/svg/market.svg" alt="">
+              <p> Best Price On The Market
+             </p>
+             </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+<div class="sys-container-lg">
+  <div class="sys-row">
+      <div class="col-md-8">
+        <div class="radius-sm">
+          <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" alt="" class="img-rwd img-banner sys-elevation-v2  card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="welcmCard">
+          <div class="sys-elevation-v2 bg-light  card sys-radius-sm text-center">
+              <img src="https://whiplash.com/wp-content/uploads/social-commerce2.png" alt="" class="img-rwd">
+              <div class="wlcmDetaiuls  p-2">
+                  <h2 class="text-alert">Shopping</h2>
+                  <p class="mt-2 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button type="button" class="sys-btn-outline-alert" routerLink="/allVendors">SHOP NOW</button>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="sys-container-lg mt-4">
+  <h2 class="mb-0">Browse By Categories</h2>
+  <p>Top Categories Of The Week</p>
+</div>
+
+<div class="sys-container-lg">
+  <div class="sys-row mt-2">
+      <div class="col-md-2">
+          <div class="cate-card-1 sys-radius-sm bg-light sys-elevation-v2 p-2 text-center">
+              <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+              <p>
+                Vegitables & Fruits
+              </p>
+          </div>
+      </div>
+      <div class="col-md-2">
+        <div class="cate-card-1 sys-radius-sm bg-light sys-elevation-v2 p-2 text-center">
+            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+            <p>
+              Vegitables & Fruits
+            </p>
+        </div>
+    </div>
+    <div class="col-md-2">
+      <div class="cate-card-1 sys-radius-sm bg-light sys-elevation-v2 p-2 text-center">
+          <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+          <p>
+            Vegitables & Fruits
+          </p>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="cate-card-1 sys-radius-sm bg-light sys-elevation-v2 p-2 text-center">
+          <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+          <p>
+            Vegitables & Fruits
+          </p>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="cate-card-1 sys-radius-sm bg-light sys-elevation-v2 p-2 text-center">
+          <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+          <p>
+            Vegitables & Fruits
+          </p>
+      </div>
+  </div>
+  <div class="col-md-2">
+    <div class="cate-card-1 sys-radius-sm bg-light sys-elevation-v2 p-2 text-center">
+        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+        <p>
+          Vegitables & Fruits
+        </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="product-table mb-5 mt-5">
+  <div class="sys-container-lg">
+    <h3 class="mb-4">
+      Featured Products
+    </h3>
+    <table class="sys-elevetion-v2">
+      <tbody>
+          <tr>
+              <td *ngFor="let data of featuredProduct" class="bg-light">
+                  <div class="product-card">
+                      <div class="pr-img text-center">
+                          <img src="{{data.prImage}}" alt="" >
+                      </div>
+                      <div class="pr-details p-2">
+                          <span class="sys-pin-badge badge-accent" *ngIf="data.status === 'In Stock'">
+                            <i>•</i> {{data.status}}
+                          </span>
+                          <span class="sys-pin-badge badge-error" *ngIf="data.status === 'Out of Stock'">
+                            <i>•</i> {{data.status}}
+                          </span>
+                          <span class="sys-pin-badge badge-alert" *ngIf="data.status === 'Low Stock'">
+                            <i>•</i> {{data.status}}
+                          </span>
+                          <p class="mb-1 mt-2">{{data.prName}}</p>
+
+                      </div>
+                      <div class="pr-action p-2 text-right mt-2 sys-grid justify-c-between align-i-center" size="sm">
+                          <h3 class="text-accent-90 mt-2">Price - ${{data.price}}</h3>
+                          <button class="sys-btn-dark" type="button"><i class="fa fa-plus"></i> ADD</button>
+                      </div>
+                  </div>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</div>

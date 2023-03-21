@@ -1,0 +1,35 @@
+
+<div class="product-table mb-5 mt-5">
+  <div class="sys-container-lg">
+    <div class="sys-grid align-i-center justify-c-between">
+      <h3 class="text-secondary">
+          Buy Groceries in your Favorite Shop
+      </h3>
+  </div>
+
+    <table class="sys-elevetion-v2">
+      <tbody>
+          <tr>
+              <td *ngFor="let details of allClients" class="bg-light">
+                  <div class="sys-card  sys-radius-sm bg-light">
+                    <div class="shop-details mt-2 p-3">
+                        <h4 class="h6 mb-0"><i class="fa-solid fa-store text-accent-70"></i> {{details.shopName}}</h4>
+                        <p class="text-accent-60"><i class="fa-solid fa-location "></i> {{details.location}}</p>
+                        <span class="sys-standard-badge bg-accent-70 sys-elevation-v2">
+                          {{details.shpCategories}}
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="sys-action mt-1 p-3 text-right align-i-center justify-c-between sys-grid">
+                        <img src="../../assets/Grocery.png" alt="" width="70">
+                        <button type="button" role="button" class="sys-btn-outline-accent" routerLink="/{{details.routerLink}}">
+                          Visit Store
+                       </button>
+                    </div>
+                </div>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</div>

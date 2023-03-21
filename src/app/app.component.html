@@ -1,0 +1,79 @@
+<div class="p-2 bg-accent-70 ps-3">
+  <div class="sys-container-lg">
+    <i class="fa fa-map"></i>&nbsp;&nbsp; Lorem ipsum, dolor sit amet
+  </div>
+</div>
+
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>India's <span class="text-accent-70">Store</span></span>
+  <span class="example-spacer"></span>
+  <span><a href="#" class="no-decoration"><i class="fa fa-phone"></i> </a></span>
+  <button mat-icon-button class="example-icon text-dark" [routerLink]="['/cart']" aria-label="Example icon-button with share icon">
+    <i class="material-icons">shopping_cart</i>  {{this.items.lenght}}
+  </button>
+</mat-toolbar>
+
+<!-- <a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a> -->
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <mat-nav-list>
+      <mat-list-item routerLink="/home">
+        🎉
+				<span class="full-width" > Home</span>
+			</mat-list-item>
+      <mat-list-item routerLink="/allVendors" >
+        🧔
+				<span class="full-width" > All Vendros</span>
+			</mat-list-item>
+			<mat-list-item>
+        🍿
+				<span class="full-width" > Grocery</span>
+			</mat-list-item>
+      <mat-list-item>
+				🍉
+        <span class="full-width" > Fruits</span>
+			</mat-list-item>
+			<mat-list-item>
+				📱
+				<span class="full-width" > Mobile Covers</span>
+			</mat-list-item>
+      <mat-list-item>
+				💡
+				<span class="full-width" > Consumer Complaint </span>
+			</mat-list-item>
+      <mat-list-item>
+        🔔
+        <span class="full-width" > Consumer Help </span>
+			</mat-list-item>
+      <mat-list-item>
+				💎
+        <span class="full-width" > Apply for Job</span>
+			</mat-list-item>
+		</mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <!-- <a [routerLink]="['/']">
+      <h1>My Store</h1>
+    </a> -->
+
+     <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
+
+
+
+
+
+<footer class=" dark-theme">
+  <div class="sys-container-lg text-ceter">
+      <p class="">
+        Powerd by Avenue Design Infotech
+      </p>
+  </div>
+</footer>

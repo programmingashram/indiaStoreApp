@@ -1,0 +1,34 @@
+<div class="sys-container-lg">
+  <table class="sys-elevetion-v2">
+    <tbody>
+        <tr>
+            <td *ngFor="let product of products; index as productId" class="bg-light">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img src="{{product.productImage}}" alt="" class="img-rwd">
+                  </div>
+                  <div class="pr-minorDetails p-2">
+                    <p>
+                      {{ product.name }}
+                    </p>
+                    <p *ngIf="product.description">
+                     {{ product.description }}
+                    </p>
+                   <div class="sys-grid align-i-baseline justify-c-between">
+                      <p>
+                        <strong>
+                          Price: {{product.price}}
+                        </strong>
+                      </p>
+                      <a [title]="product.name + ' details'" [routerLink]="['/products', productId]" class="text-dark" >
+                        Buy Now
+                      </a>
+                   </div>
+                  </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
