@@ -24,6 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductListComponent } from './product-list/product-list.component';
 import { PatleBakeryComponent } from './all-vendors/patle-bakery/patle-bakery.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselItemElementDirective } from './carousel/carousel-item-element.directive';
+import { CarouselItemDirective } from './carousel/carousel-item.directive';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ShippingComponent,
     ProductDetailsComponent,
     ProductListComponent,
-    PatleBakeryComponent
+    PatleBakeryComponent,
+    CarouselComponent,
+    CarouselItemDirective,
+    CarouselItemElementDirective
   ],
   imports: [
     BrowserModule,

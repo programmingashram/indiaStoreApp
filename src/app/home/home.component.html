@@ -1,8 +1,18 @@
-<div class="sys-container-lg">
+
+
+<div class="sys-container-lg custom">
   <div class="sys-row">
-      <div class="col-md-8">
+      <div class="col-md-8 custom-col">
         <div class="radius-sm">
-          <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" alt="" class="img-rwd img-banner sys-elevation-v2  card">
+          <carousel>
+            <ng-container *ngFor="let item of items">
+              <ng-container *carouselItem>
+                <div class="item">
+                  <img src="https://www.guestblogging.pro/wp-content/uploads/2022/10/Best-Online-Grocery-Store-in-India.jpg" alt="">
+                </div>
+              </ng-container>
+            </ng-container>
+          </carousel>
         </div>
       </div>
       <div class="col-md-4">
