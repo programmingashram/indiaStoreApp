@@ -3,6 +3,48 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+// Small devices (large handsets, tablets)
+@mixin bp-small {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+// Medium devices (large tablets)
+@mixin bp-medium {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
+// Large devices (desktops < 1080p)
+@mixin bp-large {
+  @media (min-width: 1439px) {
+    @content;
+  }
+}
+
+.item {
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+  }
+}
+
+
+// Extra Large devices (desktops >= 1080p)
+@mixin bp-xlarge {
+  @media (min-width: 1919px) {
+    @content;
+  }
+}
 
 
 @media(max-width: 767px){
@@ -16,6 +58,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     td {
       width: 100% !important;
       float: left;
+  }
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
