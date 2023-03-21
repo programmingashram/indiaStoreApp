@@ -10,6 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
 const routes: Routes = [
+  {path:'', component: HomeComponent},
   {path:'home', component: HomeComponent},
   {path: "allVendors", component: AllVendorsComponent },
   {path: "mahadevKirana", component: MahadevKiranaGenralComponent },
