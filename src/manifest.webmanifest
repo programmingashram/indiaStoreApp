@@ -1,6 +1,6 @@
 {
-  "name": "indiaStore",
-  "short_name": "indiaStore",
+  "name": "QuickCart",
+  "short_name": "QuickCart",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
