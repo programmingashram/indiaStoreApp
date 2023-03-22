@@ -6,7 +6,11 @@
   }
 }
 
-
+@media(max-width: 767px){
+  .sys-grid{
+    flex-wrap: wrap;
+  }
+}
 
 table{
   border: 1px solid gray;
