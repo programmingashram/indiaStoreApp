@@ -10,10 +10,41 @@
   <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#9a9aec">
+  <script type="”text/javascript”" src="”https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js&quot;"></script>
 <style>.mat-typography{font:400 14px/20px Roboto,sans-serif;letter-spacing:.0178571429em}html,body{height:100%}body{margin:0;font-family:Roboto,Helvetica Neue,sans-serif}</style><link rel="stylesheet" href="styles.6774410fe043e3a6.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.6774410fe043e3a6.css"></noscript></head>
 <body class="mat-typography">
   <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.356a7c6a1361d47c.js" type="module"></script><script src="polyfills.04536e9e3dde0d41.js" type="module"></script><script src="main.ef670d00c85e000e.js" type="module"></script>
+
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "108148621526657");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+   <!-- Your SDK code -->
+   <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v16.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+<script src="runtime.356a7c6a1361d47c.js" type="module"></script><script src="polyfills.04536e9e3dde0d41.js" type="module"></script><script src="main.ef31cc8054c6e425.js" type="module"></script>
 
 </body></html>

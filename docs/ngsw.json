@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1679474850794,
+  "timestamp": 1679493209354,
   "index": "indiaStore/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "indiaStore/favicon.ico",
         "indiaStore/index.html",
-        "indiaStore/main.ef670d00c85e000e.js",
+        "indiaStore/main.ef31cc8054c6e425.js",
         "indiaStore/manifest.webmanifest",
         "indiaStore/polyfills.04536e9e3dde0d41.js",
         "indiaStore/runtime.356a7c6a1361d47c.js",
@@ -36,7 +36,9 @@
         "indiaStore/assets/icons/icon-384x384.png",
         "indiaStore/assets/icons/icon-512x512.png",
         "indiaStore/assets/icons/icon-72x72.png",
-        "indiaStore/assets/icons/icon-96x96.png"
+        "indiaStore/assets/icons/icon-96x96.png",
+        "indiaStore/assets/list.png",
+        "indiaStore/assets/whatsapp (2).png"
       ],
       "patterns": []
     }
@@ -51,9 +53,11 @@
     "indiaStore/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "indiaStore/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "indiaStore/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "indiaStore/assets/list.png": "440ff0c9c6ff6e6360185ce3d9b5639782d20415",
+    "indiaStore/assets/whatsapp (2).png": "12e52eb0ece3acd804f50b4a8d5dd3d18b47d0c8",
     "indiaStore/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "indiaStore/index.html": "b0879a3e1e0169e9f570ae00309f26fecd05d0fd",
-    "indiaStore/main.ef670d00c85e000e.js": "f20abee3706b2196d0b6a77206d928377d794f81",
+    "indiaStore/index.html": "6ca8c78a9cceeadb656e5dddd56178489cbe8731",
+    "indiaStore/main.ef31cc8054c6e425.js": "d1ae0a3568619e8d49e7359965ab1ca617ef6145",
     "indiaStore/manifest.webmanifest": "83dd0e14bfebeef149f522d86eda933bef7dd238",
     "indiaStore/polyfills.04536e9e3dde0d41.js": "66c8ae621b840da15be7b5986a689f5c20fb135e",
     "indiaStore/runtime.356a7c6a1361d47c.js": "896cc1f46a948558befc9eafb77e90792945b420",
