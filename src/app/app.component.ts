@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { FacebookService, InitParams } from 'ngx-facebook';
 import { CartService } from './cart.service';
 
 
@@ -15,21 +14,14 @@ export class AppComponent {
   items: any;
   checkoutForm;
 
-  constructor(private cartService: CartService,
-              private formBuilder: FormBuilder, private facebookService: FacebookService) {
+  constructor(private cartService: CartService) {
 
     this.items = this.cartService.getItems();
 
   }
-  private initFacebookService(): void {
-    const initParams: InitParams = {
-      xfbml: true,
-      version: ''
-    };
-    this.facebookService.init(initParams);
-  }
+ 
   ngOnInit(){
-    this.initFacebookService();
+   
   }
 
 }
