@@ -27,6 +27,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemElementDirective } from './carousel/carousel-item-element.directive';
 import { CarouselItemDirective } from './carousel/carousel-item.directive';
+import { BottomShopListComponent } from './bottom-shop-list/bottom-shop-list.component';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { CarouselItemDirective } from './carousel/carousel-item.directive';
     PatleBakeryComponent,
     CarouselComponent,
     CarouselItemDirective,
-    CarouselItemElementDirective
+    CarouselItemElementDirective,
+    BottomShopListComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ import { CarouselItemDirective } from './carousel/carousel-item.directive';
     MatListModule,
     FormsModule,
     ReactiveFormsModule,
+    MatBottomSheetModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

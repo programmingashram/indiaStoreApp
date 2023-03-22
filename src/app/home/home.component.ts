@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { BottomShopListComponent } from '../bottom-shop-list/bottom-shop-list.component';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   // qtyNumber :number = 0;
-  constructor() { }
+  constructor(private _bottomSheet: MatBottomSheet) {}
+
+  openBottomSheet(): void {
+    this._bottomSheet.open(BottomShopListComponent);
+  }
 
   ngOnInit(): void {
 

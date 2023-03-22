@@ -8,14 +8,15 @@
 </div>
 
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>W <span class="text-accent-70">Mart</span></span>
+
+  <span><span class="text-accent-70 h4"><i class="fa-solid fa-store"></i> W</span> <span class="text-dark h6">Mart</span></span>
   <span class="example-spacer"></span>
   <span><a href="#" class="no-decoration"><i class="fa fa-phone"></i> </a></span>
   <button mat-icon-button class="example-icon text-dark" [routerLink]="['/cart']" aria-label="Example icon-button with share icon">
     <i class="material-icons">shopping_cart</i>  {{this.items.lenght}}
+  </button>
+  <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
   </button>
 </mat-toolbar>
 
