@@ -7,10 +7,51 @@
     align-items: center;
   }
 }
+
+.cate-card-1{
+  img{
+    filter: invert(1);
+
+  }
+
+  span{
+    top: 10px;
+    right: 10px;
+    padding: 2px 4px;
+    border-radius: 100%;
+    background-color: white;
+  }
+}
+.sellers-list{
+  display: none;
+}
 @media(max-width: 767px){
+  .sellers-list{
+    display: block;
+  }
+  .sellers::-webkit-scrollbar {
+    display: none;
+  }
+  .sellers{
+    width: 100%;
+    white-space: nowrap;
+    overflow: scroll;
+    .badge-icon{
+      padding: 4px 3px;
+      background: white;
+      border-radius: 100%;
+      position: relative;
+      left: -9px;
+    }
+  }
   .custom-col, .custom{
       padding: 0;
       margin: 0;
+  }
+  .cate-card-1{
+    img{
+      height: 100px;
+    }
   }
 }
 .img-banner{
@@ -36,7 +77,6 @@
 .card img{
   height: 143px;
   width: 100%;
-  object-fit: cover;
 }
 
 .pr-img{
