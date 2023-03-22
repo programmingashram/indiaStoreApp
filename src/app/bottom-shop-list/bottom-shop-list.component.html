@@ -1,0 +1,25 @@
+<mat-nav-list>
+  <a href="#" mat-list-item routerLink="mahadevKirana">
+    <mat-icon matListItemIcon>stores</mat-icon>
+    <span matListItemTitle>Mahade Kirana Stores</span>
+    <span matLine>Groceries</span>
+  </a>
+
+  <a href="#" mat-list-item routerLink="patleBakery">
+    <mat-icon matListItemIcon>stores</mat-icon>
+    <span matListItemTitle>Patle bakery</span>
+    <span matLine>Cacke, Pasteries...</span>
+  </a>
+
+  <a href="#" mat-list-item (click)="openLink($event)">
+    <mat-icon matListItemIcon>stores</mat-icon>
+    <span matListItemTitle>Manoj Kirana</span>
+    <span matLine>Milk, Curd...</span>
+  </a>
+
+  <a href="#" mat-list-item (click)="openLink($event)">
+    <mat-icon matListItemIcon>stores</mat-icon>
+    <span matListItemTitle>Sankar Kirana</span>
+    <span matLine>Groceries</span>
+  </a>
+</mat-nav-list>
