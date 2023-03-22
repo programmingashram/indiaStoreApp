@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1679463903690,
+  "timestamp": 1679470673923,
   "index": "indiaStore/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "indiaStore/favicon.ico",
         "indiaStore/index.html",
-        "indiaStore/main.243aa614c548cf2e.js",
+        "indiaStore/main.dc8428e87abd588c.js",
         "indiaStore/manifest.webmanifest",
         "indiaStore/polyfills.04536e9e3dde0d41.js",
         "indiaStore/runtime.356a7c6a1361d47c.js",
@@ -52,8 +52,8 @@
     "indiaStore/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "indiaStore/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "indiaStore/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "indiaStore/index.html": "8bbdf59d031648ca1620c100813a8b1d754f527d",
-    "indiaStore/main.243aa614c548cf2e.js": "7aaefe215defa7473a814e6f2d694a4bad04e87c",
+    "indiaStore/index.html": "826bef240886b45fef21f5f6bdb36b91265b231d",
+    "indiaStore/main.dc8428e87abd588c.js": "a9dd49db1cf8642e1379d1db632e37029a1ac023",
     "indiaStore/manifest.webmanifest": "83dd0e14bfebeef149f522d86eda933bef7dd238",
     "indiaStore/polyfills.04536e9e3dde0d41.js": "66c8ae621b840da15be7b5986a689f5c20fb135e",
     "indiaStore/runtime.356a7c6a1361d47c.js": "896cc1f46a948558befc9eafb77e90792945b420",
