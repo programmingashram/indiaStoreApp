@@ -22,17 +22,29 @@
     background-color: white;
   }
 }
+
 .sellers-list{
   display: none;
 }
 @media(max-width: 767px){
+  .cate-card-2{
+    font-size: 0.8rem;
+    img{
+      width: 30px;
+
+      height: 30px;
+    }
+  }
   .sellers-list{
     display: block;
   }
   .sellers::-webkit-scrollbar {
     display: none;
   }
-  .sellers{
+  .top-scroler::-webkit-scrollbar {
+    display: none;
+  }
+  .sellers , .top-scroler{
     width: 100%;
     white-space: nowrap;
     overflow: scroll;
@@ -93,5 +105,8 @@ td{
 @media(max-width: 767px){
     .shop-details h1{
         font-size: 17px;
+    }
+    td{
+      width: 50% !important;
     }
 }
