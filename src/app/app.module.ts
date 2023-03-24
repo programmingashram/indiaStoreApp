@@ -29,6 +29,8 @@ import { CarouselItemElementDirective } from './carousel/carousel-item-element.d
 import { CarouselItemDirective } from './carousel/carousel-item.directive';
 import { BottomShopListComponent } from './bottom-shop-list/bottom-shop-list.component';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { FilterPipe } from './flter.pipe';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -46,7 +48,8 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     CarouselComponent,
     CarouselItemDirective,
     CarouselItemElementDirective,
-    BottomShopListComponent
+    BottomShopListComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     MatSidenavModule,
     MatListModule,
     FormsModule,
+    MatFormFieldModule,
     ReactiveFormsModule,
     MatBottomSheetModule,
     ServiceWorkerModule.register('ngsw-worker.js', {

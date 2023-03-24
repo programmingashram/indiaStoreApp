@@ -1,5 +1,5 @@
 <div class="sys-container-lg">
-  <div class="sys-grid mb-0 top-scroler align-i-baseline gap-sm">
+  <div class="sys-grid mt-2 top-scroler align-i-baseline gap-sm">
       <div class="w-100">
           <div class="cate-card-2 p-1 text-center relative">
               <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg" alt="" width="50">
@@ -206,7 +206,14 @@
 
 
 
+<input class="form-control" type="text" [(ngModel)]="searchText" placeholder="Search">
 
+<select id="sort-by" (change)="sort($event)">
+  <option value="" selected disabled hidden>Sort By</option>
+  <option value="Name">Name</option>
+  <option value="Low">Show Low to High Price</option>
+  <option value="High">Show High to Low Price</option>
+</select>
 
 <div class="product-table mb-5 mt-5">
   <div class="sys-container-lg">
@@ -215,7 +222,7 @@
     <table class="sys-elevetion-v2">
       <tbody>
           <tr>
-              <td *ngFor="let data of featuredProduct" class="bg-light">
+              <td *ngFor="let data of featuredProduct | filter: searchText; let i = index" class="bg-light">
                   <div class="product-card">
                       <div class="pr-img text-center">
                           <img src="{{data.prImage}}" alt="" class="img-rwd">
@@ -234,7 +241,7 @@
 
                       </div>
                       <div class="pr-action p-1 text-right mt-2 sys-grid justify-c-between align-i-center" >
-                          <p class="text-accent-90 mt-2">Rs- 20{{data.price}}</p>
+                          <p class="text-accent-90 mt-2">Rs- {{data.price}}</p>
                           <button class="sys-btn-dark" type="button" size="sm"><i class="fa fa-plus"></i> ADD</button>
                       </div>
                   </div>
