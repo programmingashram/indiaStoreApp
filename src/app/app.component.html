@@ -15,9 +15,6 @@
   <button mat-icon-button class="example-icon text-dark" [routerLink]="['/cart']" aria-label="Example icon-button with share icon">
     <i class="material-icons">shopping_cart</i>  {{this.items.lenght}}
   </button>
-  <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
 </mat-toolbar>
 
 
@@ -75,6 +72,23 @@
   </div>
 
 </mat-drawer-container>
+
+<div class="bottom-menu">
+  <mat-toolbar-row>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/home" routerLinkActive="active">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/allVendors" >
+      <mat-icon>stores</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>dashboard</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</div>
 
 
 
