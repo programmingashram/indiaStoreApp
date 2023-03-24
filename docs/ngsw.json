@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1679628935052,
-  "index": "indiaStore/index.html",
+  "timestamp": 1679633653936,
+  "index": "quickcart/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "indiaStore/favicon.ico",
-        "indiaStore/index.html",
-        "indiaStore/main.1b8904e71c86ed81.js",
-        "indiaStore/manifest.webmanifest",
-        "indiaStore/polyfills.04536e9e3dde0d41.js",
-        "indiaStore/runtime.356a7c6a1361d47c.js",
-        "indiaStore/styles.6774410fe043e3a6.css"
+        "quickcart/favicon.ico",
+        "quickcart/index.html",
+        "quickcart/main.4deb2f082337c0cb.js",
+        "quickcart/manifest.webmanifest",
+        "quickcart/polyfills.04536e9e3dde0d41.js",
+        "quickcart/runtime.356a7c6a1361d47c.js",
+        "quickcart/styles.143170bdedb95491.css"
       ],
       "patterns": []
     },
@@ -29,41 +29,41 @@
         "ignoreVary": true
       },
       "urls": [
-        "indiaStore/assets/icons/icon-128x128.png",
-        "indiaStore/assets/icons/icon-144x144.png",
-        "indiaStore/assets/icons/icon-152x152.png",
-        "indiaStore/assets/icons/icon-192x192.png",
-        "indiaStore/assets/icons/icon-384x384.png",
-        "indiaStore/assets/icons/icon-512x512.png",
-        "indiaStore/assets/icons/icon-72x72.png",
-        "indiaStore/assets/icons/icon-96x96.png",
-        "indiaStore/assets/list.png",
-        "indiaStore/assets/logo.png",
-        "indiaStore/assets/whatsapp (2).png"
+        "quickcart/assets/icons/icon-128x128.png",
+        "quickcart/assets/icons/icon-144x144.png",
+        "quickcart/assets/icons/icon-152x152.png",
+        "quickcart/assets/icons/icon-192x192.png",
+        "quickcart/assets/icons/icon-384x384.png",
+        "quickcart/assets/icons/icon-512x512.png",
+        "quickcart/assets/icons/icon-72x72.png",
+        "quickcart/assets/icons/icon-96x96.png",
+        "quickcart/assets/list.png",
+        "quickcart/assets/logo.png",
+        "quickcart/assets/whatsapp (2).png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "indiaStore/assets/icons/icon-128x128.png": "3b5ea06e6dcf6f631209d2c010b0ccd28c8148f7",
-    "indiaStore/assets/icons/icon-144x144.png": "b505cf106c129f19a8b1b36809c50fb7e260d35d",
-    "indiaStore/assets/icons/icon-152x152.png": "8f9ac54f67dd4e77a261e9c9a7f7e29c814999f5",
-    "indiaStore/assets/icons/icon-192x192.png": "2573779dba33d9dc60cc0ad19250211e16324d46",
-    "indiaStore/assets/icons/icon-384x384.png": "eb359d87ed539e870a780dbf9399658132ffc8e5",
-    "indiaStore/assets/icons/icon-512x512.png": "c971cba9c88c8d87e0f1bd24d3ad0b78223681c9",
-    "indiaStore/assets/icons/icon-72x72.png": "0f8bac15fc57dbc10dd956ade4476e5b55544ea0",
-    "indiaStore/assets/icons/icon-96x96.png": "7e2a58e66396902d3468043e8587516bc755561a",
-    "indiaStore/assets/list.png": "440ff0c9c6ff6e6360185ce3d9b5639782d20415",
-    "indiaStore/assets/logo.png": "48f72a96c072793cd596118cfda1f7ebfa07881f",
-    "indiaStore/assets/whatsapp (2).png": "12e52eb0ece3acd804f50b4a8d5dd3d18b47d0c8",
-    "indiaStore/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "indiaStore/index.html": "0143d2347ff20e7ef14397bcdc7101b650fe278d",
-    "indiaStore/main.1b8904e71c86ed81.js": "3329bd5de939ff89e465238995a14c75dc2d367c",
-    "indiaStore/manifest.webmanifest": "0e6e33444f44ddaadb28dd1669a368d7395b6c56",
-    "indiaStore/polyfills.04536e9e3dde0d41.js": "66c8ae621b840da15be7b5986a689f5c20fb135e",
-    "indiaStore/runtime.356a7c6a1361d47c.js": "896cc1f46a948558befc9eafb77e90792945b420",
-    "indiaStore/styles.6774410fe043e3a6.css": "cf0fb74525c9f7b54273411721c82a9e67513a2b"
+    "quickcart/assets/icons/icon-128x128.png": "3b5ea06e6dcf6f631209d2c010b0ccd28c8148f7",
+    "quickcart/assets/icons/icon-144x144.png": "b505cf106c129f19a8b1b36809c50fb7e260d35d",
+    "quickcart/assets/icons/icon-152x152.png": "8f9ac54f67dd4e77a261e9c9a7f7e29c814999f5",
+    "quickcart/assets/icons/icon-192x192.png": "2573779dba33d9dc60cc0ad19250211e16324d46",
+    "quickcart/assets/icons/icon-384x384.png": "eb359d87ed539e870a780dbf9399658132ffc8e5",
+    "quickcart/assets/icons/icon-512x512.png": "c971cba9c88c8d87e0f1bd24d3ad0b78223681c9",
+    "quickcart/assets/icons/icon-72x72.png": "0f8bac15fc57dbc10dd956ade4476e5b55544ea0",
+    "quickcart/assets/icons/icon-96x96.png": "7e2a58e66396902d3468043e8587516bc755561a",
+    "quickcart/assets/list.png": "440ff0c9c6ff6e6360185ce3d9b5639782d20415",
+    "quickcart/assets/logo.png": "48f72a96c072793cd596118cfda1f7ebfa07881f",
+    "quickcart/assets/whatsapp (2).png": "12e52eb0ece3acd804f50b4a8d5dd3d18b47d0c8",
+    "quickcart/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "quickcart/index.html": "01dfd50f84a5ac826815658b2edca1b2812282a9",
+    "quickcart/main.4deb2f082337c0cb.js": "a9538e5a00e8fc559bab14daad34613371bfccb2",
+    "quickcart/manifest.webmanifest": "0e6e33444f44ddaadb28dd1669a368d7395b6c56",
+    "quickcart/polyfills.04536e9e3dde0d41.js": "66c8ae621b840da15be7b5986a689f5c20fb135e",
+    "quickcart/runtime.356a7c6a1361d47c.js": "896cc1f46a948558befc9eafb77e90792945b420",
+    "quickcart/styles.143170bdedb95491.css": "950a8c12b9598a9623e9f75a73c089766c1fe5e3"
   },
   "navigationUrls": [
     {
