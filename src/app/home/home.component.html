@@ -1,3 +1,63 @@
+<div class="sys-container-lg">
+  <div class="sys-grid mt-2 top-scroler align-i-baseline gap-sm">
+      <div class="w-100">
+          <div class="cate-card-2 p-1 text-center relative">
+              <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg" alt="" width="50">
+              <p>
+                Groceries
+              </p>
+              <!-- <span class="absolute">🔓</span> -->
+          </div>
+      </div>
+      <div class="w-100">
+        <div class="cate-card-2 sys-radius-sm  p-1 text-center relative">
+            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/frozen.svg" alt="" width="50">
+            <p>
+              Helth Care
+            </p>
+            <!-- <span class="absolute">🔓</span> -->
+        </div>
+    </div>
+    <div class="w-100">
+      <div class="cate-card-2 sys-radius-sm  p-1 text-center relative">
+          <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/milk.svg" alt="" width="50">
+          <p>
+            Home Care
+          </p>
+          <!-- <span class="absolute">🔓</span> -->
+      </div>
+    </div>
+    <div class="w-100">
+      <div class="cate-card-2 sys-radius-sm p-1 text-center relative">
+          <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+          <p>
+            Fruits
+          </p>
+          <!-- <span class="absolute">🔓</span> -->
+      </div>
+    </div>
+    <div class="w-100">
+      <div class="cate-card-2 sys-radius-sm  p-2 text-center relative">
+          <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+          <p>
+            Personal care
+          </p>
+          <!-- <span class="absolute">🔓</span> -->
+      </div>
+  </div>
+  <div class="w-100">
+    <div class="cate-card-2 sys-radius-sm  p-2 text-center relative">
+        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" width="50">
+        <p>
+          Vegitables
+        </p>
+        <!-- <span class="absolute">🔓</span> -->
+    </div>
+  </div>
+  </div>
+</div>
+
+
 <div class="sys-container-lg custom">
   <div class="sys-row">
       <div class="col-md-8 custom-col">
@@ -16,7 +76,7 @@
       <div class="col-md-4">
         <div class="welcmCard">
           <div class="sys-elevation-v2 bg-light  card sys-radius-sm text-center">
-              <img src="https://mydukaan.s3.amazonaws.com/78590/b8c54331-f544-4ad9-8a37-44a562bbcc3f/grocery-banner-9cfc6336-f4b7-45b1-bef5-5b5aaf6559b7.png" alt="" class="img-rwd">
+              <img src="https://esskayhomecare.com/img/portfolio/homecare.png" alt="" class="img-rwd">
               <div class="wlcmDetaiuls  p-2">
                   <h2 class="text-alert"><i class="fa-solid fa-cart-shopping"></i> Shopping</h2>
                   <p class="mt-2 mb-4">
@@ -150,7 +210,7 @@
 
 <div class="product-table mb-5 mt-5">
   <div class="sys-container-lg">
-    <h2 class="mb-0">Browse By Categories</h2>
+    <h2 class="mb-0">Fetured Products</h2>
     <p>Top Categories Of The Week</p>
     <table class="sys-elevetion-v2">
       <tbody>
@@ -158,7 +218,7 @@
               <td *ngFor="let data of featuredProduct" class="bg-light">
                   <div class="product-card">
                       <div class="pr-img text-center">
-                          <img src="{{data.prImage}}" alt="" >
+                          <img src="{{data.prImage}}" alt="" class="img-rwd">
                       </div>
                       <div class="pr-details p-2">
                           <span class="sys-pin-badge badge-accent" *ngIf="data.status === 'In Stock'">
@@ -173,9 +233,9 @@
                           <p class="mb-1 mt-2">{{data.prName}}</p>
 
                       </div>
-                      <div class="pr-action p-2 text-right mt-2 sys-grid justify-c-between align-i-center" size="sm">
-                          <h3 class="text-accent-90 mt-2">Price - ${{data.price}}</h3>
-                          <button class="sys-btn-dark" type="button"><i class="fa fa-plus"></i> ADD</button>
+                      <div class="pr-action p-1 text-right mt-2 sys-grid justify-c-between align-i-center" >
+                          <p class="text-accent-90 mt-2">Rs- 20{{data.price}}</p>
+                          <button class="sys-btn-dark" type="button" size="sm"><i class="fa fa-plus"></i> ADD</button>
                       </div>
                   </div>
               </td>
