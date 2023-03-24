@@ -29,7 +29,7 @@ import { CarouselItemElementDirective } from './carousel/carousel-item-element.d
 import { CarouselItemDirective } from './carousel/carousel-item.directive';
 import { BottomShopListComponent } from './bottom-shop-list/bottom-shop-list.component';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
-import { FacebookModule } from 'ngx-facebook';
+
 
 
 @NgModule({
@@ -65,7 +65,6 @@ import { FacebookModule } from 'ngx-facebook';
     FormsModule,
     ReactiveFormsModule,
     MatBottomSheetModule,
-    FacebookModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
