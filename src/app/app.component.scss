@@ -58,3 +58,33 @@ footer{
   z-index: 9999;
   text-align: center;
 }
+
+
+
+.bottom-menu{
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%;
+  background: white;
+  .mat-toolbar-row{
+    justify-content: space-between;
+  }
+
+
+}
+:host{
+    ::ng-deep .icon-buton{
+      &.cdk-touch-focused{
+        background-color: blue;
+      }
+  }
+}
+
+.example-icon{
+  color: black;
+}
+.example-icon:focus{
+  color: orange;
+
+}
