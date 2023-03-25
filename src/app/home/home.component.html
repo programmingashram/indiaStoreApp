@@ -1,4 +1,20 @@
-<div class="sys-container-lg">
+<div class="search-bar sticky-top mobile_view">
+  <div class="sys-container-lg mt-1">
+    <div class="sys-row">
+      <div class="col-md-12">
+        <div class="sys-grid gap-sm align-i-baseline">
+          <div class="search-inp w-100 flex align-i-center">
+            <input class="form-control searchField" type="text" routerLink="/search" placeholder="Search Quickcart.in"/>
+            <i class="fa-solid fa-search searchIcon"></i>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="sys-container-lg mobile_view">
   <div class="sys-grid mt-2 top-scroler align-i-baseline gap-sm">
       <div class="w-100">
           <div class="cate-card-2 p-1 text-center relative">
@@ -145,7 +161,7 @@
   <p>Top Categories Of The Week</p>
 </div>
 
-<div class="sys-container-lg">
+<div class="sys-container-lg desktop_veiw">
   <div class="sys-row mt-2">
       <div class="col-md-2">
           <div class="cate-card-1  bg-accent-70 sys-radius-sm  sys-elevation-v2 p-2 text-center relative">
@@ -206,14 +222,6 @@
 
 
 
-<input class="form-control" type="text" [(ngModel)]="searchText" placeholder="Search">
-
-<select id="sort-by" (change)="sort($event)">
-  <option value="" selected disabled hidden>Sort By</option>
-  <option value="Name">Name</option>
-  <option value="Low">Show Low to High Price</option>
-  <option value="High">Show High to Low Price</option>
-</select>
 
 <div class="product-table mb-5 mt-5">
   <div class="sys-container-lg">

@@ -30,31 +30,6 @@
 }
 
 @media(max-width: 767px){
-  .search-bar{
-    padding: 10px;
-    background: rgb(0,3,36);
-    background: linear-gradient(17deg, rgba(0,3,36,1) 0%, rgba(76,76,222,1) 35%, rgba(255,179,0,0.8547794117647058) 100%);
-    z-index: 99999;
-  }
-  .searchIcon{
-    padding: 10px;
-    position: relative;
-    left: -6px;
-    background: #4b4bdd;
-    color: white;
-    top: -5px;
-    z-index: 9999999;
-  }
-  .searchField{
-    padding: 8px 10px;
-    width: 100%;
-    border-radius: 4px;
-    outline: none;
-    border: 1px solid #8080806b;
-    background: white;
-    margin-bottom: 10px;
-    z-index: 99999;
-  }
   .desktop_veiw{
     display: none;
   }
@@ -137,6 +112,20 @@ td{
 }
 
 @media(max-width: 767px){
+  .search-bar{
+    padding: 10px;
+    background: rgb(0,3,36);
+    background: linear-gradient(17deg, rgba(0,3,36,1) 0%, rgba(76,76,222,1) 35%, rgba(255,179,0,0.8547794117647058) 100%);
+  }
+  .searchField{
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #8080806b;
+    background: white;
+    margin-bottom: 10px;
+  }
     .shop-details h1{
         font-size: 17px;
     }
