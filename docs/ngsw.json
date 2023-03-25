@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1679717409594,
+  "timestamp": 1679724580037,
   "index": "quickcart/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "quickcart/favicon.ico",
         "quickcart/index.html",
-        "quickcart/main.21af9af8fa073748.js",
+        "quickcart/main.4f08e0dee39710aa.js",
         "quickcart/manifest.webmanifest",
         "quickcart/polyfills.04536e9e3dde0d41.js",
         "quickcart/runtime.356a7c6a1361d47c.js",
@@ -58,8 +58,8 @@
     "quickcart/assets/logo.png": "48f72a96c072793cd596118cfda1f7ebfa07881f",
     "quickcart/assets/whatsapp (2).png": "12e52eb0ece3acd804f50b4a8d5dd3d18b47d0c8",
     "quickcart/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "quickcart/index.html": "0716b4fffce193dac826afd6941d805b870bcd76",
-    "quickcart/main.21af9af8fa073748.js": "3c44970bb623b000015eec438de9ebb0f4ed862f",
+    "quickcart/index.html": "30a9336d8dff10797e22e24b5a63c002758fe097",
+    "quickcart/main.4f08e0dee39710aa.js": "f494bed43f95459b85575b5ff3a919fae5a627ad",
     "quickcart/manifest.webmanifest": "0e6e33444f44ddaadb28dd1669a368d7395b6c56",
     "quickcart/polyfills.04536e9e3dde0d41.js": "66c8ae621b840da15be7b5986a689f5c20fb135e",
     "quickcart/runtime.356a7c6a1361d47c.js": "896cc1f46a948558befc9eafb77e90792945b420",
