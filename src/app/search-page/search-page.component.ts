@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { products } from 'src/app/products';
 @Component({
   selector: 'app-search-page',
   templateUrl: './search-page.component.html',
@@ -8,13 +8,23 @@ import { Component } from '@angular/core';
 export class SearchPageComponent {
   searchText: string;
 
+  products = products;
+
+  share() {
+    window.alert('The product has been shared!');
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
   ngOnInit(): void {
     this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
+    this.products = this.products.sort((low, high) => low.price - high.price);
   }
 
   items = [{ title: 'Slide 1' }, { title: 'Slide 2' }, { title: 'Slide 3' }];
 
-  featuredProduct = [
+   featuredProduct = [
     {
       shopName:"Mahadev Kirana Stores",
       prName:"Dhaniya Dal (Saffola Honey Active, Made with Sundarban Forest Honey, )",
@@ -86,12 +96,14 @@ export class SearchPageComponent {
       case "Low":
         {
           this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
+          this.products = this.products.sort((low, high) => low.price - high.price);
           break;
         }
 
       case "High":
         {
           this.featuredProduct = this.featuredProduct.sort((low, high) => high.price - low.price);
+          this.products = this.products.sort((low, high) => high.price - low.price);
           break;
         }
 
@@ -108,10 +120,22 @@ export class SearchPageComponent {
               return 0;
             }
           })
+          this.products = this.products.sort(function (low, high) {
+            if (low.name < high.name) {
+              return -1;
+            }
+            else if (low.name > high.name) {
+              return 1;
+            }
+            else {
+              return 0;
+            }
+          })
           break;
         }
 
       default: {
+        this.products = this.products.sort((low, high) => low.price - high.price);
         this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
         break;
       }
@@ -119,4 +143,5 @@ export class SearchPageComponent {
     }
     return this.featuredProduct;
   }
+
 }

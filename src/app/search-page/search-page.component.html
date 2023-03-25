@@ -20,14 +20,18 @@
   </div>
 </div>
 
+
 <div class="product-table mb-5 mt-5">
   <div class="sys-container-lg">
-    <h2 class="mb-0">Fetured Products</h2>
+    <h2 class="mb-0">Search products </h2>
+
+
     <table class="sys-elevetion-v2">
       <tbody>
           <tr>
-              <td *ngFor="let data of featuredProduct | filter: searchText; let i = index" class="bg-light">
-                  <div class="product-card">
+            <ng-container *ngIf="( featuredProduct | filter : searchText) as featuredProduct">
+              <td *ngFor="let data of featuredProduct | filter: searchText; let i = index"  class="bg-light" >
+                <div class="product-card" >
                       <div class="pr-img text-center">
                           <img src="{{data.prImage}}" alt="" class="img-rwd">
                       </div>
@@ -42,7 +46,6 @@
                             <i>•</i> {{data.status}}
                           </span>
                           <p class="mb-1 mt-2">{{data.prName}}</p>
-
                       </div>
                       <div class="pr-action p-1 text-right mt-2 sys-grid justify-c-between align-i-center" >
                           <p class="text-accent-90 mt-2">Rs- {{data.price}}</p>
@@ -50,8 +53,42 @@
                       </div>
                   </div>
               </td>
+              <td *ngFor="let product of products |  filter: searchText; let i = index; index as productId" class="bg-light">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img src="{{product.productImage}}" alt="" class="img-rwd">
+                  </div>
+                  <div class="pr-minorDetails p-2">
+                    <p>
+                      {{ product.name }}
+                    </p>
+                    <p *ngIf="product.description">
+                     {{ product.description }}
+                    </p>
+                   <div class="sys-grid align-i-baseline justify-c-between">
+                      <p>
+                        <strong>
+                          Price: {{product.price}}
+                        </strong>
+                      </p>
+                      <a [title]="product.name + ' details'" [routerLink]="['/products', productId]" class="text-dark" >
+                        Buy Now
+                      </a>
+                   </div>
+                  </div>
+                </div>
+              </td>
+
+
+              <p *ngIf="featuredProduct.length === 0">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/no-search-found-2511608-2133696.png" alt="" class="img-rwd">
+              </p>
+            </ng-container>
+
           </tr>
       </tbody>
   </table>
   </div>
 </div>
+
+

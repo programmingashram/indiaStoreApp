@@ -116,6 +116,8 @@ td{
     padding: 10px;
     background: rgb(0,3,36);
     background: linear-gradient(17deg, rgba(0,3,36,1) 0%, rgba(76,76,222,1) 35%, rgba(255,179,0,0.8547794117647058) 100%);
+    z-index: 99999;
+    padding: 13px 17px;
   }
   .searchField{
     padding: 8px 10px;
