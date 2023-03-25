@@ -1,0 +1,57 @@
+<div class="search-bar sticky-top mobile_view">
+  <div class="sys-container-lg mt-1">
+    <div class="sys-row">
+      <div class="col-md-12">
+        <div class="sys-grid gap-sm align-i-baseline">
+          <div class="search-inp w-100 flex align-i-center">
+            <input class="form-control searchField" type="text" [(ngModel)]="searchText" placeholder="Search Quickcart.in"/>
+          </div>
+          <div class="w-100">
+            <select id="sort-by" class="searchField w-100" (change)="sort($event)" >
+              <option value="" selected disabled hidden>Sort By</option>
+              <option value="Name">Name</option>
+              <option value="Low">Show Low to High Price</option>
+              <option value="High">Show High to Low Price</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="product-table mb-5 mt-5">
+  <div class="sys-container-lg">
+    <h2 class="mb-0">Fetured Products</h2>
+    <table class="sys-elevetion-v2">
+      <tbody>
+          <tr>
+              <td *ngFor="let data of featuredProduct | filter: searchText; let i = index" class="bg-light">
+                  <div class="product-card">
+                      <div class="pr-img text-center">
+                          <img src="{{data.prImage}}" alt="" class="img-rwd">
+                      </div>
+                      <div class="pr-details p-2">
+                          <span class="sys-pin-badge badge-accent" *ngIf="data.status === 'In Stock'">
+                            <i>•</i> {{data.status}}
+                          </span>
+                          <span class="sys-pin-badge badge-error" *ngIf="data.status === 'Out of Stock'">
+                            <i>•</i> {{data.status}}
+                          </span>
+                          <span class="sys-pin-badge badge-alert" *ngIf="data.status === 'Low Stock'">
+                            <i>•</i> {{data.status}}
+                          </span>
+                          <p class="mb-1 mt-2">{{data.prName}}</p>
+
+                      </div>
+                      <div class="pr-action p-1 text-right mt-2 sys-grid justify-c-between align-i-center" >
+                          <p class="text-accent-90 mt-2">Rs- {{data.price}}</p>
+                          <button class="sys-btn-dark" type="button" size="sm"><i class="fa fa-plus"></i> ADD</button>
+                      </div>
+                  </div>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</div>

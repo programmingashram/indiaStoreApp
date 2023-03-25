@@ -31,6 +31,7 @@ import { BottomShopListComponent } from './bottom-shop-list/bottom-shop-list.com
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { FilterPipe } from './flter.pipe';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 
 
@@ -49,7 +50,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CarouselItemDirective,
     CarouselItemElementDirective,
     BottomShopListComponent,
-    FilterPipe
+    FilterPipe,
+    SearchPageComponent
   ],
   imports: [
     BrowserModule,

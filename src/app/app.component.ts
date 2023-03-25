@@ -19,9 +19,9 @@ export class AppComponent {
     this.items = this.cartService.getItems();
 
   }
- 
+
   ngOnInit(){
-   
+
   }
 
 }
