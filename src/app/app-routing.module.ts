@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AllVendorsComponent } from './all-vendors/all-vendors.component';
 import { MahadevKiranaGenralComponent } from './all-vendors/mahadev-kirana-genral/mahadev-kirana-genral.component';
 import { PatleBakeryComponent } from './all-vendors/patle-bakery/patle-bakery.component';
+import { AllshopComponent } from './allshop/allshop.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'shipping', component: ShippingComponent },
   { path: 'search', component: SearchPageComponent },
+  { path: 'test', component: AllshopComponent },
 ];
 
 @NgModule({
