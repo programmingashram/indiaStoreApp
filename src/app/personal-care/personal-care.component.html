@@ -5,17 +5,17 @@
             <td *ngFor="let product of products; index as productId" class="bg-light">
                 <div class="product-card">
                   <div class="product-img mb-2">
-                    <img src="{{product.ProductImg}}" alt="" class="img-rwd">
+                    <!-- <img src="{{product.ProductImg}}" alt="" class="img-rwd"> -->
                   </div>
                   <div class="pr-minorDetails p-2">
                     <p>
-                      {{ product.ProductName }}
+                      {{ product.ProductName }} - ({{ product.ProductCategories }})
                     </p>
                     <p>
                       {{product.ProductBrand}}
                     </p>
-                    <p *ngIf="product.ProductDescription">
-                     {{ product.ProductDescription }}
+                    <p *ngIf="product.ProductDiscription">
+                     {{ product.ProductDiscription }}
                     </p>
                    <div class="sys-grid align-i-baseline justify-c-between">
                       <p>

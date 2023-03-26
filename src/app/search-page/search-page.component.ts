@@ -19,7 +19,7 @@ export class SearchPageComponent {
   }
   ngOnInit(): void {
     this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
-    this.products = this.products.sort((low, high) => low.price - high.price);
+    // this.products = this.products.sort((low, high) => low.price - high.price);
   }
 
   items = [{ title: 'Slide 1' }, { title: 'Slide 2' }, { title: 'Slide 3' }];
@@ -91,57 +91,57 @@ export class SearchPageComponent {
     },
 
   ]
-  sort(event: any) {
-    switch (event.target.value) {
-      case "Low":
-        {
-          this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
-          this.products = this.products.sort((low, high) => low.price - high.price);
-          break;
-        }
+  // sort(event: any) {
+  //   switch (event.target.value) {
+  //     case "Low":
+  //       {
+  //         this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
+  //         this.products = this.products.sort((low, high) => low.price - high.price);
+  //         break;
+  //       }
 
-      case "High":
-        {
-          this.featuredProduct = this.featuredProduct.sort((low, high) => high.price - low.price);
-          this.products = this.products.sort((low, high) => high.price - low.price);
-          break;
-        }
+  //     case "High":
+  //       {
+  //         this.featuredProduct = this.featuredProduct.sort((low, high) => high.price - low.price);
+  //         this.products = this.products.sort((low, high) => high.price - low.price);
+  //         break;
+  //       }
 
-      case "Name":
-        {
-          this.featuredProduct = this.featuredProduct.sort(function (low, high) {
-            if (low.prName < high.prName) {
-              return -1;
-            }
-            else if (low.prName > high.prName) {
-              return 1;
-            }
-            else {
-              return 0;
-            }
-          })
-          this.products = this.products.sort(function (low, high) {
-            if (low.name < high.name) {
-              return -1;
-            }
-            else if (low.name > high.name) {
-              return 1;
-            }
-            else {
-              return 0;
-            }
-          })
-          break;
-        }
+  //     case "Name":
+  //       {
+  //         this.featuredProduct = this.featuredProduct.sort(function (low, high) {
+  //           if (low.prName < high.prName) {
+  //             return -1;
+  //           }
+  //           else if (low.prName > high.prName) {
+  //             return 1;
+  //           }
+  //           else {
+  //             return 0;
+  //           }
+  //         })
+  //         this.products = this.products.sort(function (low, high) {
+  //           // if (low.name < high.name) {
+  //           //   return -1;
+  //           // }
+  //           // else if (low.name > high.name) {
+  //           //   return 1;
+  //           // }
+  //           // else {
+  //           //   return 0;
+  //           // }
+  //         })
+  //         break;
+  //       }
 
-      default: {
-        this.products = this.products.sort((low, high) => low.price - high.price);
-        this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
-        break;
-      }
+  //     default: {
+  //       // this.products = this.products.sort((low, high) => low.price - high.price);
+  //       this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
+  //       break;
+  //     }
 
-    }
-    return this.featuredProduct;
-  }
+  //   }
+  //   return this.featuredProduct;
+  // }
 
 }

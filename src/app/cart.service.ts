@@ -12,9 +12,11 @@ export class CartService {
   addToCart(product) {
     this.items.push(product);
   }
-  addToCart2(productsBakery) {
-    this.items.push(productsBakery);
+
+  addToCart3(PersonalCare) {
+    this.items.push(PersonalCare);
   }
+
 
   getItems() {
     return this.items;
