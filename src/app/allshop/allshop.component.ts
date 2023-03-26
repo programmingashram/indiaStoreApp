@@ -10,6 +10,8 @@ export class AllshopComponent {
    PriductData = {
     "MahadevProducts":[
      {
+
+      "ProductImg": "https://www.sujalcart.com/files/catalog/new_products_image/Nirma_Advance_Washing_Powder_500_g.jpg ",
       "ProductName": "Nirma ",
       "ProductCaetgories": "Groceries",
       "ProductDescription": "information, knowledge or stories about a particular subject that is not written down but passed on from one person to another",
@@ -17,28 +19,21 @@ export class AllshopComponent {
       "ProductBrand": "Sujal"
      },
      {
-      "ProductName": "Nirma ",
+      "ProductImg": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/611UqKiFJQL._SL1138_.jpg ","ProductName": "Nirma ",
       "ProductCaetgories": "Groceries",
       "ProductDescription": "information, knowledge or stories about a particular subject that is not written down but passed on from one person to another",
       "ProductPrice": "Null",
       "ProductBrand": "Ghadi"
      },
      {
-      "ProductName": "Nirma ",
-      "ProductCaetgories": "Groceries",
-      "ProductDescription": "information, knowledge or stories about a particular subject that is not written down but passed on from one person to another",
-      "ProductPrice": "Null",
-      "ProductBrand": "Ghadi"
-     },
-     {
-      "ProductName": "Nirma ",
+      "ProductImg": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81fKza7HLlL._SY450_.jpg ","ProductName": "Nirma ",
       "ProductCaetgories": "Groceries",
       "ProductDescription": "information, knowledge or stories about a particular subject that is not written down but passed on from one person to another",
       "ProductPrice": "Null",
       "ProductBrand": "Arial"
      },
      {
-      "ProductName": "Nirma ",
+      "ProductImg": "https://www.bigbasket.com/media/uploads/p/l/40192803_1-surf-excel-quick-wash-detergent-powder.jpg ","ProductName": "Nirma ",
       "ProductCaetgories": "Groceries",
       "ProductDescription": "information, knowledge or stories about a particular subject that is not written down but passed on from one person to another",
       "ProductPrice": "Null",

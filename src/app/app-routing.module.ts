@@ -6,8 +6,9 @@ import { PatleBakeryComponent } from './all-vendors/patle-bakery/patle-bakery.co
 import { AllshopComponent } from './allshop/allshop.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
+import { PersonalCareComponent } from './personal-care/personal-care.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ProductListComponent } from './product-list/product-list.component';
+// import { ProductListComponent } from './product-list/product-list.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'shipping', component: ShippingComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'test', component: AllshopComponent },
+  { path: 'personalCare', component: PersonalCareComponent },
 ];
 
 @NgModule({
