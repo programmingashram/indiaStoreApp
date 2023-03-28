@@ -13,9 +13,9 @@ export class CartService {
     this.items.push(product);
   }
 
-  addToCart3(PersonalCare) {
-    this.items.push(PersonalCare);
-  }
+  // addToCart3(PersonalCare) {
+  //   this.items.push(PersonalCare);
+  // }
 
 
   getItems() {

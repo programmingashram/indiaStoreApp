@@ -14,8 +14,12 @@
   .example-sidenav-content {
    padding: 1rem;
   }
-
+  .cart{
+    position: relative;
+  top: 4px;
+  }
   @media(max-width: 767px){
+   
     .example-sidenav-content {
       padding: 0;
      }

@@ -9,22 +9,21 @@
 
 <mat-toolbar color="primary">
 
-  <span class="text-accent-70">Quick </span> <span class="text-alert">Cart</span>
+  <span class="text-accent-70">🛒 Quick </span> <span class="text-alert">Cart</span>
   <span class="example-spacer"></span>
-  <span><a href="#" class="no-decoration"><i class="fa fa-phone"></i> </a></span>
-  <button mat-icon-button class="example-icon text-dark" [routerLink]="['/cart']" aria-label="Example icon-button with share icon">
-    <i class="material-icons">shopping_cart</i>  {{this.items.lenght}}
-  </button>
+  
+  <div class="sys-grid gap-sm me-3 align-i-baseline">
+    <div><i class="fa fa-bell text-error-70"></i> </div>
+    <div class="cart" [routerLink]="['/cart']"> <i class="material-icons text-alert" matBadge="{{ getRowsValue(null) }}" matBadgeOverlap="false">shopping_cart</i> </div>
+  </div>
+ 
 </mat-toolbar>
 
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-nav-list>
-      <mat-list-item routerLink="/personalCare">
-        🎉
-				<span class="full-width" > Personal Care</span>
-			</mat-list-item>
+
       <mat-list-item routerLink="/home">
         🎉
 				<span class="full-width" > Home</span>
@@ -33,17 +32,35 @@
         🧔
 				<span class="full-width" > All Vendros</span>
 			</mat-list-item>
-			<mat-list-item>
+      <mat-list-item>
         🍿
 				<span class="full-width" > Grocery</span>
 			</mat-list-item>
+      <mat-list-item routerLink="/personalCare">
+        🧩
+				<span class="full-width" > Personal Care</span>
+			</mat-list-item>
+      <mat-list-item routerLink="/personalCare">
+        🏡
+				<span class="full-width" > Home Care</span>
+			</mat-list-item>
+      <mat-list-item routerLink="/personalCare">
+        💊
+				<span class="full-width" > Health Care</span>
+			</mat-list-item>
+		
       <mat-list-item>
-				🍉
+				🔓
         <span class="full-width" > Fruits</span>
 			</mat-list-item>
 			<mat-list-item>
-				📱
+				🔓
 				<span class="full-width" > Mobile Covers</span>
+			</mat-list-item>
+     
+      <mat-list-item>
+				🔓
+        <span class="full-width" > Apply for Job</span>
 			</mat-list-item>
       <mat-list-item>
 				💡
@@ -52,10 +69,6 @@
       <mat-list-item>
         🔔
         <span class="full-width" > Consumer Help </span>
-			</mat-list-item>
-      <mat-list-item>
-				💎
-        <span class="full-width" > Apply for Job</span>
 			</mat-list-item>
 		</mat-nav-list>
   </mat-drawer>

@@ -1,28 +1,40 @@
-<h3>Cart</h3>
+<!-- <h3>Cart</h3>
 
 <p>
   <a routerLink="/shipping">Shipping Prices</a>
-</p>
+</p> -->
 
 <div class="sys-container-lg">
   <div class="sys-row">
     <div class="col-md-6">
-      <table class="table">
-        <thead>
-          <th>
-            Item Name
-          </th>
-          <th>
-            Item Price
-          </th>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of items">
-            <td>{{ item.name }}</td>
-            <td>{{ item.price | currency }}</td>
-          </tr>
-        </tbody>
-    </table>
+      <div class="sys-elevation-v2">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>
+                 Image
+              </th>
+              <th>
+                 Name
+              </th>
+              <th>
+                 Brand
+              </th>
+              <th>
+                 Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of items">
+              <td><img src="{{ item.ProductImg }}" alt="" class="cart-img"></td>
+              <td>{{ item.ProductName }}</td>
+              <td>{{item.ProductBrand}}</td>
+              <td>{{ item.ProductPrice  }}</td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
     </div>
 
     <div class="col-md-6">

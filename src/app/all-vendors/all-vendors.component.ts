@@ -19,13 +19,13 @@ export class AllVendorsComponent implements OnInit {
       location: "Rampayli Road",
       routerLink:"/mahadevKirana"
     },
-    {
-      shopName:"Patle Bakery",
-      shpCategories: "🍉 Bakery",
-      shopLogo: "https://img.freepik.com/free-vector/gradient-nerd-logo-template_23-2149201756.jpg?w=2000",
-      location: "Goli baro Chowk",
-      routerLink:"/patleBakery"
-    }
+    // {
+    //   shopName:"Patle Bakery",
+    //   shpCategories: "🍉 Bakery",
+    //   shopLogo: "https://img.freepik.com/free-vector/gradient-nerd-logo-template_23-2149201756.jpg?w=2000",
+    //   location: "Goli baro Chowk",
+    //   routerLink:"/patleBakery"
+    // }
   ]
 
 }
