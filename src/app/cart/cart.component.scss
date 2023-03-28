@@ -13,3 +13,14 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
   }
+
+@media (max-width: 767px){
+    td{
+       width: auto !important; 
+       float: none;
+    }
+    
+  .cart-img{
+    width: 30px;
+  }
+}

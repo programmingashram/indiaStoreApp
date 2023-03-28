@@ -13,15 +13,21 @@ export class AppComponent {
   showFiller = true;
   items: any;
   checkoutForm;
-
+  length: any;
   constructor(private cartService: CartService) {
-
     this.items = this.cartService.getItems();
+  }
 
+  public getRowsValue(flag) {
+    if (flag === null) {
+      return this.items.length;
+    } else {
+      return this.items.filter(i => (i.state == flag)).length;
+    }
   }
 
   ngOnInit(){
-
+    
   }
 
 }

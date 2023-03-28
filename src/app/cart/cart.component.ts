@@ -8,7 +8,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  items: any;
+  items: any[];
   checkoutForm;
 
   constructor(private cartService: CartService,
@@ -30,8 +30,17 @@ export class CartComponent implements OnInit {
     this.checkoutForm.reset();
   }
 
+
+  public getRowsValue(flag) {
+    if (flag === null) {
+      return this.items.length;
+    } else {
+      return this.items.filter(i => (i.state == flag)).length;
+    }
+  }
+
   ngOnInit() {
-    console.log(this.items.price);
+   
   }
 
 }
