@@ -7,7 +7,7 @@
 <div class="sys-container-lg">
   <div class="sys-row">
     <div class="col-md-6">
-      <div class="sys-elevation-v2">
+      <div class="sys-elevation-v2" *ngIf="items.length > 0">
         <table class="table ">
           <thead>
             <tr>
@@ -32,31 +32,43 @@
               <td>{{item.ProductBrand}}</td>
               <td>{{ item.ProductPrice  }}</td>
             </tr>
+
           </tbody>
       </table>
       </div>
     </div>
+    <img *ngIf="items.length <= 0" src="https://i0.wp.com/www.huratips.com/wp-content/uploads/2019/04/empty-cart.png?fit=603%2C288&ssl=1" alt="" class="w-100">
 
-    <div class="col-md-6">
+    <div class="hideData">
+      <p #ProductName>
+        <span #span *ngFor="let item of items">
+          {{ item.ProductName }}
+        </span>
+      </p>
+      <p #ProductBrand>
+        <span #span *ngFor="let item of items">
+          {{item.ProductBrand}}
+        </span>
+      </p>
+      <p #ProductPrice>
+        <span #span *ngFor="let item of items">
+          {{ item.ProductPrice  }}
+        </span>
+      </p>
+    </div>
+
+    <div class="col-md-6" *ngIf="items.length > 0">
       <h2>User Details</h2>
-      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
-
-        <div>
-          <label for="name">
-            Name
-          </label>
-          <input id="name" type="text" formControlName="name">
+      <form ngNoForm method="POST"  action="https://script.google.com/macros/s/AKfycbziNbH2W8HXKitSm5KzAyq11Lnu3JjCGGZVbGDY3BkLaNue8mAou_60b-uC7pwIT-_S/exec">
+        <div class="hideData">
+          <input name="Product" type="text"  placeholder="Prodcut" value="{{ this.myData }}" readonly>
+          <input name="Brand" type="text" placeholder="Brand" value="{{ this.myData1 }}" readonly>
+          <input name="Price" type="text" placeholder="Price" value="{{ this.myData2 }}" readonly>
         </div>
-
-        <div>
-          <label for="address">
-            Address
-          </label>
-          <input id="address" type="text" formControlName="address">
-        </div>
-
-        <button class="button" class="sys-btn-accent" type="submit">Purchase</button>
-
+        <input name="Phone" type="text"  placeholder="Phone">
+        <input name="Email" type="email" placeholder="Email" required>
+        <input name="Name" type="text" placeholder="Name" required>
+        <input type="submit" value="Send">
       </form>
     </div>
   </div>

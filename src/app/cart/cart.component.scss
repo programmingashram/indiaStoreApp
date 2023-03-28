@@ -7,6 +7,9 @@
         padding: 5px;
     }
 }
+.hideData{
+  display: none;
+}
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -16,10 +19,10 @@ input[type=text] {
 
 @media (max-width: 767px){
     td{
-       width: auto !important; 
+       width: auto !important;
        float: none;
     }
-    
+
   .cart-img{
     width: 30px;
   }
