@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { CartService } from '../cart.service';
 
@@ -10,9 +10,15 @@ import { CartService } from '../cart.service';
 export class CartComponent implements OnInit {
   items: any[];
   checkoutForm;
+  myData : any;
+  myData1 : any;
+  myData2 : any;
+  @ViewChild('ProductName', {static: true}) paragraphRef: ElementRef;
+  @ViewChild('ProductBrand', {static: true}) paragraphRef1: ElementRef;
+  @ViewChild('ProductPrice', {static: true}) paragraphRef2: ElementRef;
 
   constructor(private cartService: CartService,
-              private formBuilder: FormBuilder,) {
+              private formBuilder: FormBuilder,private elRef:ElementRef) {
 
     this.items = this.cartService.getItems();
 
@@ -21,7 +27,13 @@ export class CartComponent implements OnInit {
       address: ''
     });
    }
+   ngAfterViewInit() {
+    this.myData = this.paragraphRef.nativeElement.innerText;
+    this.myData1 = this.paragraphRef1.nativeElement.innerText;
+    this.myData2 = this.paragraphRef2.nativeElement.innerText;
 
+    // console.log(this.paragraphRef.nativeElement.innerText);
+  }
    onSubmit(customerData: any) {
     // Process checkout data here
     console.warn('Your order has been submitted', customerData);
@@ -39,8 +51,10 @@ export class CartComponent implements OnInit {
     }
   }
 
+
+
   ngOnInit() {
-   
+
   }
 
 }
