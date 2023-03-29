@@ -24,6 +24,18 @@ input[type=text] {
     }
 
   .cart-img{
-    width: 30px;
+    width: 70px;
   }
+  .action{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 64px;
+  }
+  .empty{
+    position: absolute;
+    top: 111px;
+    bottom: 0;
+  }
+
 }

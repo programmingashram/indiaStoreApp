@@ -9,7 +9,7 @@
 
 <mat-toolbar color="primary">
 
-  <span class="text-accent-70">🛒 Quick </span> <span class="text-alert">Cart</span>
+  <span class="text-accent-70"> <img src="../assets/trolley.png" alt="" class="logo"> Quick </span> <span class="text-alert">Cart</span>
   <span class="example-spacer"></span>
 
   <div class="sys-grid gap-sm me-3 align-i-baseline">
@@ -78,19 +78,17 @@
       <h1>My Store</h1>
     </a> -->
 
+
      <router-outlet>
-      <div *ngIf="message;">
+      <!-- <div *ngIf="message;">
         <h1>{{ message.notification.title }}</h1>
         <h2>{{ message.notification.body }}</h2>
       </div>
       <div *ngIf="!message;">
         No Message Arrived
-      </div>
+      </div> -->
 
      </router-outlet>
-
-
-
 
   </div>
 
@@ -112,6 +110,8 @@
     </button>
   </mat-toolbar-row>
 </div>
+
+
 
 
 

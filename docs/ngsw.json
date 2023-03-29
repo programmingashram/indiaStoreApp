@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1680075446722,
+  "timestamp": 1680081939662,
   "index": "quickcart/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "quickcart/favicon.ico",
         "quickcart/firebase-messaging-sw.js",
         "quickcart/index.html",
-        "quickcart/main.1b107ac7f2756860.js",
+        "quickcart/main.17b2bb3aefa69e41.js",
         "quickcart/manifest.webmanifest",
         "quickcart/polyfills.04536e9e3dde0d41.js",
         "quickcart/runtime.356a7c6a1361d47c.js",
@@ -30,6 +30,10 @@
         "ignoreVary": true
       },
       "urls": [
+        "quickcart/assets/fruit.png",
+        "quickcart/assets/grocery.png",
+        "quickcart/assets/health-care.png",
+        "quickcart/assets/home.png",
         "quickcart/assets/icons/icon-128x128.png",
         "quickcart/assets/icons/icon-144x144.png",
         "quickcart/assets/icons/icon-152x152.png",
@@ -40,6 +44,8 @@
         "quickcart/assets/icons/icon-96x96.png",
         "quickcart/assets/list.png",
         "quickcart/assets/logo.png",
+        "quickcart/assets/personal-care.png",
+        "quickcart/assets/trolley.png",
         "quickcart/assets/whatsapp (2).png"
       ],
       "patterns": []
@@ -47,6 +53,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "quickcart/assets/fruit.png": "7f19b165e1dfa9b77320476aa1888df17b039020",
+    "quickcart/assets/grocery.png": "656e01603657508a6d49b9949b4f8948e1f97497",
+    "quickcart/assets/health-care.png": "f006e3bac4e4368b86e7708afa23900a0e07cd8c",
+    "quickcart/assets/home.png": "2c6ba5ec5082995104a409fd347ceb98552cf030",
     "quickcart/assets/icons/icon-128x128.png": "3b5ea06e6dcf6f631209d2c010b0ccd28c8148f7",
     "quickcart/assets/icons/icon-144x144.png": "b505cf106c129f19a8b1b36809c50fb7e260d35d",
     "quickcart/assets/icons/icon-152x152.png": "8f9ac54f67dd4e77a261e9c9a7f7e29c814999f5",
@@ -57,11 +67,13 @@
     "quickcart/assets/icons/icon-96x96.png": "7e2a58e66396902d3468043e8587516bc755561a",
     "quickcart/assets/list.png": "440ff0c9c6ff6e6360185ce3d9b5639782d20415",
     "quickcart/assets/logo.png": "48f72a96c072793cd596118cfda1f7ebfa07881f",
+    "quickcart/assets/personal-care.png": "da9df7a5473da033c54f620f46b55779e54fd7aa",
+    "quickcart/assets/trolley.png": "0eede63cf68dca0a13fdcd549e5cd0fe458a737e",
     "quickcart/assets/whatsapp (2).png": "12e52eb0ece3acd804f50b4a8d5dd3d18b47d0c8",
     "quickcart/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "quickcart/firebase-messaging-sw.js": "e3ddca418eaf0e0c395fc5d23ddfcb0d3a4258fc",
-    "quickcart/index.html": "b9879d1b688195add949a3b855fbb49d24230a3b",
-    "quickcart/main.1b107ac7f2756860.js": "ed215e29bcf0f180b16c30817c094c9541b09a91",
+    "quickcart/index.html": "daa478ce13c842ba6bb37b42aa89333146ce2b12",
+    "quickcart/main.17b2bb3aefa69e41.js": "c1fe597690e8c013346b75f0f36397d8c575dc0f",
     "quickcart/manifest.webmanifest": "c53204b82b1c39edfc79f90adf7429423d0a202e",
     "quickcart/polyfills.04536e9e3dde0d41.js": "66c8ae621b840da15be7b5986a689f5c20fb135e",
     "quickcart/runtime.356a7c6a1361d47c.js": "896cc1f46a948558befc9eafb77e90792945b420",
