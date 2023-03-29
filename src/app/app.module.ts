@@ -34,7 +34,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { AllshopComponent } from './allshop/allshop.component';
 import { PersonalCareComponent } from './personal-care/personal-care.component';
-
+import { initializeApp } from "firebase/app";
+import { environment } from 'src/environments/environment';
+initializeApp(environment.firebase);
 
 
 @NgModule({

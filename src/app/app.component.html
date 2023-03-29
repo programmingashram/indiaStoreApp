@@ -11,12 +11,12 @@
 
   <span class="text-accent-70">🛒 Quick </span> <span class="text-alert">Cart</span>
   <span class="example-spacer"></span>
-  
+
   <div class="sys-grid gap-sm me-3 align-i-baseline">
     <div><i class="fa fa-bell text-error-70"></i> </div>
     <div class="cart" [routerLink]="['/cart']"> <i class="material-icons text-alert" matBadge="{{ getRowsValue(null) }}" matBadgeOverlap="false">shopping_cart</i> </div>
   </div>
- 
+
 </mat-toolbar>
 
 
@@ -48,7 +48,7 @@
         💊
 				<span class="full-width" > Health Care</span>
 			</mat-list-item>
-		
+
       <mat-list-item>
 				🔓
         <span class="full-width" > Fruits</span>
@@ -57,7 +57,7 @@
 				🔓
 				<span class="full-width" > Mobile Covers</span>
 			</mat-list-item>
-     
+
       <mat-list-item>
 				🔓
         <span class="full-width" > Apply for Job</span>
@@ -79,7 +79,13 @@
     </a> -->
 
      <router-outlet>
-
+      <div *ngIf="message;">
+        <h1>{{ message.notification.title }}</h1>
+        <h2>{{ message.notification.body }}</h2>
+      </div>
+      <div *ngIf="!message;">
+        No Message Arrived
+      </div>
 
      </router-outlet>
 
