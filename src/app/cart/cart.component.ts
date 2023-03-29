@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { CartService } from '../cart.service';
 
@@ -13,6 +13,7 @@ export class CartComponent implements OnInit {
   myData : any;
   myData1 : any;
   myData2 : any;
+  isShowDiv = true;
   @ViewChild('ProductName', {static: true}) paragraphRef: ElementRef;
   @ViewChild('ProductBrand', {static: true}) paragraphRef1: ElementRef;
   @ViewChild('ProductPrice', {static: true}) paragraphRef2: ElementRef;
@@ -26,6 +27,9 @@ export class CartComponent implements OnInit {
       name: '',
       address: ''
     });
+   }
+   submisionForm(){
+    this.isShowDiv = !this.isShowDiv;
    }
    ngAfterViewInit() {
     this.myData = this.paragraphRef.nativeElement.innerText;
