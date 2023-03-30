@@ -26,9 +26,8 @@ export class AppComponent {
   }
   constructor(private cartService: CartService, private oneSignal: OneSignal) {
     this.items = this.cartService.getItems();
-
     this.oneSignal.init({
-      appId: "10a7c28a-9a03-401b-8760-4674f77c4c65",
+      appId: "5ffa9dda-2e76-4c0f-846d-5a1a0d45339b",
     });
   }
 
