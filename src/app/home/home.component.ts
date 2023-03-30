@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { BottomShopListComponent } from '../bottom-shop-list/bottom-shop-list.component';
+import { products } from '../products';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.featuredProduct = this.featuredProduct.sort((low, high) => low.price - high.price);
+  }
+
+  products = products;
+
+  share() {
+    window.alert('The product has been shared!');
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
   }
 
   items = [{ title: 'Slide 1' }, { title: 'Slide 2' }, { title: 'Slide 3' }];
