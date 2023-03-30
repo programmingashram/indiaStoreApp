@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1680172131376,
+  "timestamp": 1680173766791,
   "index": "quickcart/index.html",
   "assetGroups": [
     {
@@ -11,6 +11,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "quickcart/OneSignalSDKWorker.js",
         "quickcart/favicon.ico",
         "quickcart/index.html",
         "quickcart/main.0d7673afe11625a2.js",
@@ -52,6 +53,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "quickcart/OneSignalSDKWorker.js": "2a04201028527d0db7532997f5c51de0291d5b6f",
     "quickcart/assets/fruit.png": "7f19b165e1dfa9b77320476aa1888df17b039020",
     "quickcart/assets/grocery.png": "656e01603657508a6d49b9949b4f8948e1f97497",
     "quickcart/assets/health-care.png": "f006e3bac4e4368b86e7708afa23900a0e07cd8c",
