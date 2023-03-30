@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { CartService } from './cart.service';
 import { environment } from "../environments/environment";
-import { getMessaging, getToken, onMessage } from "firebase/messaging";
+import { OneSignal } from 'onesignal-ngx';
+// import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,12 @@ export class AppComponent {
   items: any;
   checkoutForm;
   length: any;
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService, private oneSignal: OneSignal) {
     this.items = this.cartService.getItems();
+
+    this.oneSignal.init({
+      appId: "10a7c28a-9a03-401b-8760-4674f77c4c65",
+    });
   }
 
   public getRowsValue(flag) {
@@ -27,33 +32,6 @@ export class AppComponent {
     }
   }
   message:any = null;
-  ngOnInit(){
-    this.requestPermission();
-    this.listen();
-  }
-
-  requestPermission() {
-    const messaging = getMessaging();
-    getToken(messaging,
-     { vapidKey: environment.firebase.vapidKey}).then(
-       (currentToken) => {
-         if (currentToken) {
-           console.log("Hurraaa!!! we got the token.....");
-           console.log(currentToken);
-         } else {
-           console.log('No registration token available. Request permission to generate one.');
-         }
-     }).catch((err) => {
-        console.log('An error occurred while retrieving token. ', err);
-    });
-  }
-  listen() {
-    const messaging = getMessaging();
-    onMessage(messaging, (payload) => {
-      console.log('Message received. ', payload);
-      this.message=payload;
-    });
-  }
-
+  ngOnInit(){}
 
 }
