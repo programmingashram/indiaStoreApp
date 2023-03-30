@@ -32,10 +32,6 @@ export class AppComponent {
     }
   }
   message:any = null;
-  ngOnInit(){
-
-  }
-
-
+  ngOnInit(){}
 
 }
