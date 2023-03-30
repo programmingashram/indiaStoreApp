@@ -1,5 +1,5 @@
 {
-  "name": "india-store",
+  "name": "quick-cart",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,6 +23,7 @@
     "@angular/service-worker": "^15.2.0",
     "firebase": "^8.10.0",
     "ngx-facebook": "^3.0.0-0",
+    "onesignal-ngx": "^1.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
