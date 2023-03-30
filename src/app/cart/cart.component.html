@@ -17,12 +17,34 @@
     </div>
 </div>
 
-<div class="action text-center mt-3" *ngIf="items.length > 0" (click)="submisionForm()">
-  <button type="button" role="button" class="sys-btn-dark">CHECKOUT</button>
-</div>
+<div class="sys-container-lg p-2 w-75">
+  <div class="action text-center mt-3 sys-grid align-i-baseline justify-c-between" *ngIf="items.length > 0" (click)="submisionForm()">
+    <p>
+      <strong>Total - 568</strong>
+    </p>
 
+    <button type="button" role="button" class="sys-btn-dark">CHECKOUT</button>
+  </div>
+</div>
 <img *ngIf="items.length <= 0" src="https://i0.wp.com/www.huratips.com/wp-content/uploads/2019/04/empty-cart.png?fit=603%2C288&ssl=1" alt="" class="w-100 empty">
 
+<div class="hideData">
+  <p #ProductName>
+    <span #span *ngFor="let item of items">
+      {{ item.ProductName }}
+    </span>
+  </p>
+  <p #ProductBrand>
+    <span #span *ngFor="let item of items">
+      {{item.ProductBrand}}
+    </span>
+  </p>
+  <p #ProductPrice>
+    <span #span *ngFor="let item of items">
+      {{ item.ProductPrice  }}
+    </span>
+  </p>
+</div>
 
 <div class="col-md-6" *ngIf="!isShowDiv">
   <h2>User Details</h2>

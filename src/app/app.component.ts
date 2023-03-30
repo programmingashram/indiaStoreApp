@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { CartService } from './cart.service';
 import { environment } from "../environments/environment";
 import { OneSignal } from 'onesignal-ngx';
+import { MatSidenav } from '@angular/material/sidenav';
 // import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 @Component({
@@ -11,11 +12,18 @@ import { OneSignal } from 'onesignal-ngx';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild('drawer') drawer: MatSidenav;
+
+  reason = '';
   title = 'stores';
   showFiller = true;
   items: any;
   checkoutForm;
   length: any;
+  close(reason: string) {
+    this.reason = reason;
+    this.drawer.close();
+  }
   constructor(private cartService: CartService, private oneSignal: OneSignal) {
     this.items = this.cartService.getItems();
 

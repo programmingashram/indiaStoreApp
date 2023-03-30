@@ -14,10 +14,14 @@ export class CartComponent implements OnInit {
   myData1 : any;
   myData2 : any;
   isShowDiv = true;
+  price: number;
+  sum: number = 0;
   @ViewChild('ProductName', {static: true}) paragraphRef: ElementRef;
   @ViewChild('ProductBrand', {static: true}) paragraphRef1: ElementRef;
   @ViewChild('ProductPrice', {static: true}) paragraphRef2: ElementRef;
+  @ViewChild('ProductPrice', {static: true}) paragraphRef0: ElementRef;
 
+  // expected output: 81
   constructor(private cartService: CartService,
               private formBuilder: FormBuilder,private elRef:ElementRef) {
 
@@ -32,11 +36,13 @@ export class CartComponent implements OnInit {
     this.isShowDiv = !this.isShowDiv;
    }
    ngAfterViewInit() {
+    this.price = this.paragraphRef0.nativeElement.innerText;
     this.myData = this.paragraphRef.nativeElement.innerText;
     this.myData1 = this.paragraphRef1.nativeElement.innerText;
     this.myData2 = this.paragraphRef2.nativeElement.innerText;
 
-    // console.log(this.paragraphRef.nativeElement.innerText);
+    this.items .forEach(a => this.sum += a.this.ProductPrice);
+
   }
    onSubmit(customerData: any) {
     // Process checkout data here
