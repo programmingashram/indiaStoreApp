@@ -12,7 +12,7 @@ import { MatSidenav } from '@angular/material/sidenav';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild('sidenav') sidenav: MatSidenav;
+  @ViewChild('drawer') drawer: MatSidenav;
 
   reason = '';
   title = 'stores';
@@ -22,9 +22,8 @@ export class AppComponent {
   length: any;
   close(reason: string) {
     this.reason = reason;
-    this.sidenav.close();
+    this.drawer.close();
   }
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
   constructor(private cartService: CartService, private oneSignal: OneSignal) {
     this.items = this.cartService.getItems();
 
